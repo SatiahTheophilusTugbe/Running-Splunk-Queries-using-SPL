@@ -7,8 +7,8 @@ from initial data injestion warm-ups to scheduling alerts. This repo serves as a
 # Data/Log Injestion Warm ups
 In this initial exercise, I designed a custom SPL (Search Processing Language) query and researched specific security mitigation strategies for an attack. Here’s how I approached it:
 
-<h2> Uploading the Log File:</h2>
-  I started by uploading the provided Fortinet IPS log file into Splunk.
+<h1> Uploading the Log File:</h1>
+- I started by uploading the provided Fortinet IPS log file into Splunk.
 
 ![3](https://github.com/user-attachments/assets/04364515-2601-4bc6-a51b-6fb62d9f5d5e)
 
