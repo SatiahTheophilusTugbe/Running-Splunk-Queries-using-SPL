@@ -1,7 +1,7 @@
 # RUNNING SPLUNK QUERIES USING SPL
 # Project Overview
 
-In this project, I document my journey in exploring various aspects of Splunk. In this guide, I'll walk you through the steps I took to complete key activities related to Splunk, 
+In this project, I documented my journey in exploring various aspects of Splunk. In this guide, I'll walk you through the steps I took to complete key activities related to Splunk, 
 from initial data injestion warm-ups to scheduling alerts. This repo serves as a detailed reference for anyone looking to understand how to perform these tasks in Splunk.
 
 # Data/Log Injestion Warm ups
