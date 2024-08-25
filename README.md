@@ -96,9 +96,21 @@ This task enhanced my understanding of baselining and how to set effective thres
 # Splunk Scheduling Alerts
 In the final task, I designed and scheduled an alert to notify when a brute force attack is detected:
 
-Alert Configuration: I set up an alert to trigger if the number of failed logins exceeds the threshold of 7 within an hour.
-Email Notifications: I configured the alert to send an email to the SOC team with a subject line "Brute Force Alert".
-Outcome: This activity rounded out my learning by allowing me to set up real-time alerts, which is critical for timely incident response.
+- Alert Configuration: I set up an alert to trigger if the number of failed logins exceeds the threshold of 30 within an hour.
 
-Feel free to explore the individual files and queries in this repository to get a more detailed understanding of each step. This repository documents my hands-on experience and serves as a guide for others venturing into the world of Splunk.
+![22a](https://github.com/user-attachments/assets/e63bc0e4-b56f-4cfc-993d-71a0d590d27d)
+
+Email Notifications: I configured the alert to send an email to the SOC team with a subject line "Log Validation Alert".
+
+![22b](https://github.com/user-attachments/assets/267596a2-faf6-4582-8d59-0ed1f92899db)
+
+- Alert creation confirmation:
+
+![22e](https://github.com/user-attachments/assets/2764e9f6-b90a-45e2-8aaf-19f2de88ea3d)
+
+# Outcome: 
+This activity rounded out my learning by allowing me to set up real-time alerts, which is critical for timely incident response.
+
+Feel free to explore the individual files and queries in this repository to get a more detailed understanding of each step. This repository documents 
+my hands-on experience and serves as a guide for others venturing into the world of Splunk.
 
