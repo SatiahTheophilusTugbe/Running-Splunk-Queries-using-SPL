@@ -7,11 +7,13 @@ from initial data injestion warm-ups to scheduling alerts. This repo serves as a
 # Data/Log Injestion Warm ups
 In this initial exercise, I designed a custom SPL (Search Processing Language) query and researched specific security mitigation strategies for an attack. Here’s how I approached it:
 
-- Uploading the Log File: I started by uploading the provided Fortinet IPS log file into Splunk.
+- Uploading the Log File:
+  I started by uploading the provided Fortinet IPS log file into Splunk.
 
 ![3](https://github.com/user-attachments/assets/04364515-2601-4bc6-a51b-6fb62d9f5d5e)
 
-- Analyzing Source IP: Using the query, I determined the top source IP (src_ip) which turned out to be 41.146.8.66 with 22 counts.
+- Analyzing Source IP:
+  Using the query, I determined the top source IP (src_ip) which turned out to be 41.146.8.66 with 22 counts.
 
 ![8](https://github.com/user-attachments/assets/9ad43eb0-d8f0-4fdc-9d85-5932985ab5ed)
 
