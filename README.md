@@ -22,7 +22,7 @@ In this initial exercise, I designed a custom SPL (Search Processing Language) q
 # Mitigation Strategy: 
 The attack was a Denial of Service (DoS) targeting a TNS listener. I found that patching or upgrading to a non-vulnerable version is a recommended mitigation.
 
-#Outcome: 
+# Outcome: 
 This activity gave me a strong understanding of how to utilize Splunk for forensic analysis and security threat identification.
 
 2. Splunk Statistics
