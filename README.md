@@ -7,13 +7,11 @@ from initial data injestion warm-ups to scheduling alerts. This repo serves as a
 # Data/Log Injestion Warm ups
 In this initial exercise, I designed a custom SPL (Search Processing Language) query and researched specific security mitigation strategies for an attack. Here’s how I approached it:
 
-<h1> Uploading the Log File:</h1>
-- I started by uploading the provided Fortinet IPS log file into Splunk.
+- Uploading the Log File: I started by uploading the provided Fortinet IPS log file into Splunk.
 
 ![3](https://github.com/user-attachments/assets/04364515-2601-4bc6-a51b-6fb62d9f5d5e)
 
-- Analyzing Source IP:
-  Using the query, I determined the top source IP (src_ip) which turned out to be 41.146.8.66 with 22 counts.
+- Analyzing Source IP: Using the query, I determined the top source IP (src_ip) which turned out to be 41.146.8.66 with 22 counts.
 
 ![8](https://github.com/user-attachments/assets/9ad43eb0-d8f0-4fdc-9d85-5932985ab5ed)
 
@@ -27,24 +25,31 @@ The attack was a Denial of Service (DoS) targeting a TNS listener. I found that 
 # Outcome: 
 This activity gave me a strong understanding of how to utilize Splunk for forensic analysis and security threat identification.
 
-2. Splunk Statistics
+# Splunk Statistics
 Next, I was tasked with creating statistical reports and generating a new field using SPL:
 
-Top Destination IPs: I used a query to list the top 20 destination IP addresses.
-spl
-Copy code
-source="fortinet_IPS_logs.csv" | top limit=20 dest_ip
-Top Source IPs and Ports: I created another query to display the top 10 source IPs and their associated ports.
-spl
-Copy code
-source="fortinet_IPS_logs.csv" | top limit=10 src_ip src_port
-Custom Field Creation: I created a new field DB_type to distinguish between customer and non-customer databases.
-spl
-Copy code
-source="fortinet_IPS_logs.csv" | eval DB_type = if(dest_ip == "12.130.60.5","Customer DB","Non-Customer DB")
-Outcome: This activity honed my ability to use SPL for generating meaningful reports and creating custom fields for better data classification.
+- Top Destination IPs: I used a query to list the top 20 destination IP addresses.
 
-3. Splunk Reports
+SPL Query: source="fortinet_IPS_logs.csv" | top limit=20 dest_ip
+
+![14](https://github.com/user-attachments/assets/f745df37-bc88-4b3b-acc5-2bad8a8a196b)
+
+- Top Source IPs and Ports: I created another query to display the top 10 source IPs and their associated ports.
+
+SPL Query: source="fortinet_IPS_logs.csv" | top limit=10 src_ip src_port
+
+![16](https://github.com/user-attachments/assets/4bfb66eb-947f-48c2-be67-edb6ff4d942c)
+
+Custom Field Creation: I created a new field DB_type to distinguish between customer and non-customer databases.
+
+SPL Query: source="fortinet_IPS_logs.csv" | eval DB_type = if(dest_ip == "12.130.60.5","Customer DB","Non-Customer DB")
+
+![17](https://github.com/user-attachments/assets/f49099d0-d3eb-4f32-8b33-34b35f40438f)
+
+# Outcome: 
+This activity honed my ability to use SPL for generating meaningful reports and creating custom fields for better data classification.
+
+# Splunk Reports
 In this task, I created a scheduled report and set up an email notification system:
 
 Creating a Report: I generated a report titled "DB Server Attack Report" using the query from the previous activity.
