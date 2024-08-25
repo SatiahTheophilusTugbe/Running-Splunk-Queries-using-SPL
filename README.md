@@ -52,9 +52,21 @@ This activity honed my ability to use SPL for generating meaningful reports and 
 # Splunk Reports
 In this task, I created a scheduled report and set up an email notification system:
 
-Creating a Report: I generated a report titled "DB Server Attack Report" using the query from the previous activity.
-Scheduling the Report: I scheduled the report to run daily at 12 p.m. and set up an email notification to be sent to management.
-Outcome: This exercise solidified my skills in automating report generation and setting up proactive notification systems in Splunk.
+- Creating a Report: I generated a report titled "BruteForce by account_Name Report" using the query from the previous activity.
+
+![19](https://github.com/user-attachments/assets/65e99d3a-5d38-476e-afa3-d587860f98a5)
+
+- Scheduling the Report: I scheduled the report to run daily at 01 a.m. and set up an email notification to be sent to management.
+
+![20a](https://github.com/user-attachments/assets/9036a46e-9eb6-4c60-919b-c0f09e431392)
+
+- Email Notification setup:
+
+![20b](https://github.com/user-attachments/assets/b1a87dbc-cc3c-4072-880e-325fc21972ff)
+
+
+# Outcome: 
+This exercise solidified my skills in automating report generation and setting up proactive notification systems in Splunk.
 
 4. Splunk Baselining
 Here, I established a baseline for normal activity on a Windows server:
