@@ -111,6 +111,6 @@ Email Notifications: I configured the alert to send an email to the SOC team wit
 # Outcome: 
 This activity rounded out my learning by allowing me to set up real-time alerts, which is critical for timely incident response.
 
-Feel free to explore the individual files and queries in this repository to get a more detailed understanding of each step. This repository documents 
+- Feel free to explore the individual files and queries in this repository to get a more detailed understanding of each step. This repository documents 
 my hands-on experience and serves as a guide for others venturing into the world of Splunk.
 
